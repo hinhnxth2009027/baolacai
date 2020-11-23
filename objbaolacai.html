@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="objbaolacai.css">
+    <title>báo lá cải</title>
+</head>
+<body>
+<div class="toan_dien">
+    <div class="container">
+        <form action="#" method="get">
+            <label>tiêu đề:</label>
+            <input type="text" id="title" placeholder="title"><br>
+            <label>ảnh đại diện bài viết "dạng url":</label>
+            <input type="text" id="thumbnail" placeholder="profile"><br>
+            <label>nội dung:</label>
+            <input type="text" id="content" placeholder="conten stt"><br>
+            <label>danh mục:</label>
+            <input type="text" id="category" placeholder="category">
+            <div>
+                <button class="button_save" type="button" id="save"><span class="indam">lưu lại</span></button>
+                <button class="button_reset" type="button" id="reset"><span class="indam">xóa đầu nhập</span></button>
+                <button class="button_show" type="button" id="display"><span class="indam">hiển thị nội dung đã lưu</span>
+                </button>
+            </div>
+            <div id="msgerror"></div>
+        </form>
+    </div>
+    <div id="show_conten_all">
+    </div>
+</div>
+<script src="objbaolacai.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.toan_dien {
+    background-image: linear-gradient(to bottom right, #dd39ff, #4a70ff, #dd39ff, #4a70ff);
+    width: 100%;
+    min-height: 3000px;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 50px;
+    width: 600px;
+    float: left;
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+}
+
+#title {
+    width: 200px;
+    margin-bottom: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: black 1px 3px 5px;
+    border: none;
+}
+
+#title:hover {
+    box-shadow: black 3px 6px 9px;
+}
+
+#content {
+    width: 500px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: black 1px 3px 5px;
+    border: none;
+}
+
+#content:hover {
+    box-shadow: black 3px 6px 9px;
+}
+
+#category {
+    margin-bottom: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: black 1px 3px 5px;
+    border: none;
+}
+
+#category:hover {
+    box-shadow: black 3px 6px 9px;
+}
+
+#thumbnail {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: black 1px 3px 5px;
+    border: none;
+}
+
+#thumbnail:hover {
+    box-shadow: black 3px 6px 9px;
+}
+
+.button_show {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 185px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: black 1px 3px 5px;
+    border: none;
+}
+
+.button_save {
+    margin-right: 30px;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: black 1px 3px 5px;
+    border: none;
+}
+
+.button_reset {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: black 1px 3px 5px;
+    border: none;
+}
+
+#show_conten_all {
+    width: 1200px;
+    float: right;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.jj {
+    border: black 1px solid;
+}
+
+.new_content {
+    margin-bottom: 40px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 105%;
+    color: chartreuse;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.indam {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+::placeholder {
+    color: #323232;
+}
+
+input[placeholder] {
+    padding-left: 20px;
+}
+
+input:focus {
+    outline: none
+}
+
+.mau_xanh {
+    color: chartreuse;
+}
+
+button:focus {
+    outline: none;
+}
+
+#msgerror {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+
+.sucset {
+    color: #17ff00;
+}
+
+
+.error {
+    color: yellow;
+}
+
+
+.title_show {
+    color: aqua;
+}
+
+button:hover {
+    box-shadow: black 3px 6px 9px;
+    color: red;
+}
