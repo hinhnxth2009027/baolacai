@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74455150-0c8a-4f79-a8aa-895da0b41099" name="Default Changelist" comment="" />
+    <list default="true" id="74455150-0c8a-4f79-a8aa-895da0b41099" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/objbaolacai.html" beforeDir="false" afterPath="$PROJECT_DIR$/objbaolacai.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +67,7 @@
       <workItem from="1607506925643" duration="3062000" />
       <workItem from="1607523533813" duration="4000" />
       <workItem from="1607523688855" duration="330000" />
+      <workItem from="1607524044905" duration="539000" />
     </task>
     <servers />
   </component>
