@@ -1,4 +1,4 @@
-var domain = 'https://2-dot-backup-server-003.appspot.com';
+var domain = 'https://2-dot-backup-server-002.appspot.com';
 var link_register = '/_api/v2/members';
 var linklogin = '/_api/v2/members/authentication';
 document.addEventListener('DOMContentLoaded', function () {
@@ -188,12 +188,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     var contenloadJson = JSON.parse(this.responseText);
                     for (var i = 0; i <= contenloadJson.length; i++) {
                         var element = contenloadJson[i];
-                        if (i === 102) {
-                            document.querySelector('.load_ding').style.display = 'none';
-                            break;
-                        }
                         document.querySelector('.conten_new_song').innerHTML += `<div slot="${element.thumbnail}" title="bài hát : ${element.name} - được thể hiện bởi ca sỹ : ${element.singer} - được sáng tác bới : ${element.author}" id="${element.link}" class="on_audio_play"><img src="${element.thumbnail}" alt=""><br><p>singer:${element.singer}</p><br><p>song name:${element.name}</p><br><p></p> </div>`
-                        var btnplay_audio = document.querySelectorAll('.on_audio_play');
                     }
                 } else {
                     alert('The content was not found and currently has an internet error');
