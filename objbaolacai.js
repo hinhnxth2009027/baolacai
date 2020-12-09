@@ -327,12 +327,6 @@ document.addEventListener('DOMContentLoaded', function () {
         xhr.send();
     });
 });
-var btn_menu_nav_bar = document.querySelector('.nav_bar_menu');
-btn_menu_nav_bar.addEventListener('click', function () {
-    document.querySelector('.menu').style.display = 'block';
-    document.querySelector('.conten_new_song').style.display = 'none';
-    document.querySelector('.close_menu').style.display = 'block';
-});
 var btnclose_menu = document.querySelector('.close_menu');
 btnclose_menu.addEventListener('click', function () {
     document.querySelector('.menu').style.display = 'none';
