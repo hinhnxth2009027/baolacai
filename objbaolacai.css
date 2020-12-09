@@ -1,176 +1,1260 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.toan_dien {
-    background-image: linear-gradient(to bottom right, #dd39ff, #4a70ff, #dd39ff, #4a70ff);
-    width: 100%;
-    min-height: 3000px;
+.nav_bar_menu {
+    cursor: pointer;
+}
+
+.nav_bar_menu:hover {
+    box-shadow: black 3px 6px 9px;
+}
+
+.close_menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    display: none;
+    cursor: pointer;
+}
+
+.modal2 {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.register_div {
+    width: 45%;
+    box-sizing: border-box;
+    margin: 3rem auto;
+    min-height: 36rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, #e66cff, #4662ff, #ccd6ff);
+    box-shadow: black 3px 6px 9px;
+}
+
+.input_register_col_min {
+    width: 35%;
+    height: 2rem;
+    box-sizing: border-box;
+    border-bottom: #5fff00 2px solid;
+    float: left;
+}
+
+.index_name_col_min {
+    width: 15%;
+    height: 2rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.input_register {
+    width: 80%;
+    height: 2rem;
+    box-sizing: border-box;
+    border-bottom: #5fff00 2px solid;
+    float: left;
+}
+
+.btn-submit_register {
+    margin-top: 30px;
+}
+
+.login_div {
+    width: 35%;
+    box-sizing: border-box;
+    margin: 8rem auto;
+    min-height: 20rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, #fd0000, #4662ff, #ccd6ff);
+    box-shadow: black 3px 6px 9px;
+}
+
+.register_form input[type=button] {
+    background-image: linear-gradient(to bottom right, #ff3939, #5fff00);
+    color: #000000;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    box-shadow: black 1px 2px 3px;
+    margin: 0 20px;
+    cursor: pointer;
 }
 
 .container {
-    box-sizing: border-box;
-    padding: 50px;
-    width: 600px;
-    float: left;
-    display: block;
-    position: fixed;
-    left: 20px;
-    top: 10px;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
 }
 
-#title {
-    width: 200px;
-    margin-bottom: 30px;
-    height: 30px;
-    border-radius: 15px;
-    box-shadow: black 1px 3px 5px;
-    border: none;
-}
-
-#title:hover {
-    box-shadow: black 3px 6px 9px;
-}
-
-#content {
+.rotating {
+    -webkit-animation: rotating 15s linear infinite;
     width: 500px;
-    height: 30px;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    box-shadow: black 1px 3px 5px;
-    border: none;
+    height: 500px;
+    background-size:350px ;
+    border-radius: 50%;
+    margin: 200px auto;
 }
 
-#content:hover {
-    box-shadow: black 3px 6px 9px;
+.audio_play_container img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: red 3px solid;
+    margin: 100px auto;
+    display: block;
+    overflow: hidden;
 }
 
-#category {
-    margin-bottom: 30px;
-    height: 30px;
-    border-radius: 15px;
-    box-shadow: black 1px 3px 5px;
-    border: none;
+.ads {
+    margin: 20px auto;
+    right: 350px;
+    width: 700px;
+    border-left: #5fff00 1px solid;
+    border-right: #5fff00 1px solid;
 }
 
-#category:hover {
-    box-shadow: black 3px 6px 9px;
+.audio_play {
+    margin: 0 auto;
+    width: 500px;
+    display: block;
 }
 
-#thumbnail {
-    margin-bottom: 30px;
-    width: 300px;
-    height: 30px;
-    border-radius: 15px;
-    box-shadow: black 1px 3px 5px;
-    border: none;
-}
-
-#thumbnail:hover {
-    box-shadow: black 3px 6px 9px;
-}
-
-.button_show {
+.audio_play_container span {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
-    width: 185px;
-    height: 30px;
-    border-radius: 15px;
-    box-shadow: black 1px 3px 5px;
-    border: none;
+    top: 20px;
+    right: 40px;
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
 }
 
-.button_save {
-    margin-right: 30px;
-    width: 90px;
-    height: 30px;
+.get_mySong div {
+    width: 262px;
+    height: 262px;
+    display: inline-block;
+    margin: 12px;
+    text-align: center;
+    border: #ccd6ff 1px solid;
     border-radius: 15px;
-    box-shadow: black 1px 3px 5px;
-    border: none;
-}
-
-.button_reset {
-    width: 120px;
-    height: 30px;
-    border-radius: 15px;
-    box-shadow: black 1px 3px 5px;
-    border: none;
-}
-
-#show_conten_all {
-    width: 1200px;
-    float: right;
     box-sizing: border-box;
+}
+
+.close_mysong {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    color: #ff0000;
+    font-size: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.my_info img {
+    width: 200px;
+    height: 200px;
+    border: white 5px solid;
+    border-radius: 50%;
+}
+
+.my_info h1 {
+    color: white;
+    margin-bottom: 70px;
+}
+
+.my_info p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.my_info {
+    width: 60%;
+    height: 800px;
+    margin: 0 auto;
+    border: #ccd6ff 3px solid;
+    background: rgba(0, 0, 0, 0.8);
     padding: 30px;
-    margin-right: 10px;
+    box-sizing: border-box;
     text-align: center;
 }
 
-.jj {
-    border: black 1px solid;
+.close_profile1 {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    color: #ff0000;
+    font-size: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 30px;
 }
 
-.new_content {
-    margin-bottom: 40px;
+.add_song {
+    width: 35%;
+    box-sizing: border-box;
+    margin: 8rem auto;
+    min-height: 20rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, #e76cfa, #3b57ef, #ffffff);
+    box-shadow: black 3px 6px 9px;
 }
 
-form label {
+.addSong_tag_name {
+    margin-bottom: 30px;
+}
+
+.add_song .container_login {
+    margin: 10px 0;
+    height: 2rem;
+}
+
+.select_menu {
+    color: white;
+    padding-top: 10px;
     font-weight: bold;
-    font-size: 105%;
-    color: chartreuse;
-    margin-bottom: 7px;
+    font-size: 18px;
+    list-style: none;
+    cursor: pointer;
+    height: 35px;
+    width: 150px;
+    margin: 50px auto;
+    border-radius: 5px;
+    border: white 1px solid;
+}
+
+.logo_app {
+    color: beige;
+    margin: 60px auto 20px auto;
+    width: 170px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    border: white 5px solid;
+}
+
+.close_add_song {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: #ff0000;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+@media only screen and (max-width: 1640px) {
+    .get_mySong div {
+        width: 30%;
+        height: 262px;
+        display: inline-block;
+        margin: 12px;
+        text-align: center;
+        border: #ccd6ff 1px solid;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+
+    .add_song {
+        width: 45%;
+        box-sizing: border-box;
+        margin: 8rem auto;
+        min-height: 20rem;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #e76cfa, #3b57ef, #ffffff);
+        box-shadow: black 3px 6px 9px;
+    }
+}
+
+@media only screen and (max-width: 1610px) {
+    .register_div {
+        width: 70%;
+        box-sizing: border-box;
+        margin: 3rem auto;
+        min-height: 40rem;
+        text-align: center;
+        padding: 3rem;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #e66cff, #4662ff, #ccd6ff);
+        box-shadow: black 3px 6px 9px;
+    }
+
+}
+
+@media only screen and (max-width: 1355px) {
+    .register_div {
+        width: 80%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        min-height: 40rem;
+        text-align: center;
+        padding: 3rem;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #e66cff, #4662ff, #ccd6ff);
+        box-shadow: black 3px 6px 9px;
+    }
+
+    .login_div {
+        width: 50%;
+        box-sizing: border-box;
+        margin: 8rem auto;
+        min-height: 20rem;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #fd0000, #4662ff, #ccd6ff);
+        box-shadow: black 3px 6px 9px;
+    }
+
+    .menu {
+        width: 15%;
+        min-height: 1800px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, #e66cff, #4662ff);
+        text-align: center;
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 1249px) {
+
+    .close_add_song {
+        position: fixed;
+        top: -10px;
+        right: 10px;
+        color: #ff0000;
+        font-size: 50px;
+        cursor: pointer;
+        z-index: 100000;
+    }
+
+    .menu {
+        width: 100%;
+        min-height: 1800px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, #e66cff, #4662ff);
+        text-align: center;
+        display: none;
+    }
+
+    .conten_new_song {
+        display: inline-block;
+        width: 100%;
+        min-height: 1200px;
+        float: right;
+        border-left: #ccd6ff 3px solid;
+        background-image: linear-gradient(to bottom right, #e050ff, #3253ff, #e050ff, #3253ff);
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .nav_bar {
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to bottom, #e050ff, #3253ff, #e050ff, #3253ff);
+        border-bottom: white 2px solid;
+    }
+
+    .nav_bar_menu {
+        border-radius: 50%;
+        width: 49px;
+        height: auto;
+        float: right;
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+
+    .nav_bar_baner {
+        color: white;
+        margin: 5px 30px;
+        display: inline-block;
+    }
+
+    .conten_new_song div {
+        width: 17%;
+        height: 262px;
+        display: inline-block;
+        margin: 12px;
+        text-align: center;
+        border: #ccd6ff 1px solid;
+        border-radius: 10px;
+    }
+
+    .conten_new_song div img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: #ff9191 3px solid;
+        display: inline-block;
+        outline: none;
+        overflow: hidden;
+    }
+
+    .get_mySong div {
+        width: 45%;
+        height: 262px;
+        display: inline-block;
+        margin: 12px;
+        text-align: center;
+        border: #ccd6ff 1px solid;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+
+    .add_song {
+        width: 65%;
+        box-sizing: border-box;
+        margin: 8rem auto;
+        min-height: 20rem;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #e76cfa, #3b57ef, #ffffff);
+        box-shadow: black 3px 6px 9px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .menu {
+        width: 15%;
+        min-height: 12000px;
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, #e66cff, #4662ff);
+        text-align: center;
+    }
+
+    .conten_new_song {
+        display: inline-block;
+        width: 85%;
+        min-height: 1200px;
+        float: right;
+        border-left: #ccd6ff 3px solid;
+        background-image: linear-gradient(to bottom right, #e050ff, #3253ff, #e050ff, #3253ff);
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .nav_bar {
+        display: none;
+    }
+
+    .conten_new_song div {
+        width: 17%;
+        height: 262px;
+        display: inline-block;
+        margin: 12px;
+        text-align: center;
+        border: #ccd6ff 1px solid;
+        border-radius: 10px;
+    }
+
+    .conten_new_song div img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: #ff9191 3px solid;
+        display: inline-block;
+        outline: none;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 958px) {
+    .login_div {
+        width: 90%;
+        box-sizing: border-box;
+        margin: 8rem auto;
+        min-height: 20rem;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #fd0000, #4662ff, #ccd6ff);
+        box-shadow: black 3px 6px 9px;
+    }
+
+    .modal2 {
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 50px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    }
+}
+
+@media only screen and (max-width: 863px) {
+    .register_div {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        min-height: 40rem;
+        text-align: center;
+        padding: 3rem;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #e66cff, #4662ff, #ccd6ff);
+        box-shadow: black 3px 6px 9px;
+    }
+
+    .get_mySong div {
+        width: 100%;
+        height: 262px;
+        display: inline-block;
+        margin: 12px;
+        text-align: center;
+        border: #ccd6ff 1px solid;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+
+    .my_info {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1800px;
+        margin: 0 auto;
+        border: none;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .my_info img {
+        width: 150px;
+        height: 150px;
+        border: white 5px solid;
+        border-radius: 50%;
+    }
+
+    .my_info h1 {
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .my_info p {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .close_profile1 {
+        position: fixed;
+        top: -20px;
+        right: -10px;
+        color: #ff0000;
+        font-size: 50px;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-right: 30px;
+        z-index: 1000;
+    }
+
+    .add_song {
+        width: 90%;
+        box-sizing: border-box;
+        margin: 40px auto 0 auto;
+        height: 30rem;
+        text-align: center;
+        padding: 3px;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #e76cfa, #3b57ef, #ffffff);
+        box-shadow: black 3px 6px 9px;
+    }
+
+    .btnSubmit, .btndelete {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .addSong_tag_name {
+        margin-bottom: 2px;
+    }
+
+    .add_song .container_login {
+        margin: 0;
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 691px) {
+    body {
+        display: block;
+    }
+    .input_register_col_min {
+        width: 75%;
+        height: 2rem;
+        box-sizing: border-box;
+        border-bottom: #5fff00 2px solid;
+        display: block;
+        float: left;
+    }
+
+    .register_div {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        min-height: 55rem;
+        text-align: center;
+        border-radius: 0;
+        background-image: linear-gradient(to bottom right, #e66cff, #4662ff, #ccd6ff);
+        box-shadow: black 3px 6px 9px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .modal1 {
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 1px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    }
+
+    .gender {
+        display: block;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .index_name_col_min {
+        width: 25%;
+        height: 2rem;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .input_register {
+        width: 75%;
+        height: 2rem;
+        box-sizing: border-box;
+        border-bottom: #5fff00 2px solid;
+        display: block;
+        float: left;
+    }
+
+    .btn-submit_register {
+        margin-top: 30px;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .register_form input[type=button] {
+        background-image: linear-gradient(to bottom right, #ff3939, #5fff00);
+        color: #000000;
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
+        box-shadow: black 1px 2px 3px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .container {
+        width: 100%;
+        height: 0;
+        margin-bottom: 1rem;
+    }
+
+    .container label, input[type=password], input[type=email], input[type=text] {
+        height: 2rem;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .select_menu {
+        color: white;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        list-style: none;
+        cursor: pointer;
+        height: 35px;
+        width: 120px;
+        float: left;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: white 1px solid;
+    }
+
+    .select_menu1 {
+        margin-left: 30px;
+    }
+
+    .select_menu2 {
+        float: right;
+    }
+
+    .select_menu3 {
+        float: right;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-height: 320px)and (max-width: 568px) {
+    .select_menu {
+        color: white;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        list-style: none;
+        cursor: pointer;
+        height: 35px;
+        width: 120px;
+        float: left;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: white 1px solid;
+    }
+
+    .select_menu1 {
+        margin-left: 30px;
+    }
+
+    .select_menu2 {
+        float: right;
+    }
+
+    .select_menu3 {
+        float: right;
+        margin-right: 30px;
+    }
+
+    .logo_app {
+        color: beige;
+        margin: 10px auto 10px auto;
+        width: 150px;
+        height: auto;
+        display: block;
+        border-radius: 50%;
+        border: white 5px solid;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    .add_song .index_name_col_min {
+        width: 20%;
+    }
+
+    .add_song .input_login {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 634px) {
+    .conten_new_song div {
+        width: 100%;
+        height: 262px;
+        display: inline-block;
+        margin: 12px;
+        text-align: center;
+        border: #ccd6ff 1px solid;
+        border-radius: 10px;
+    }
+
+    .conten_new_song div img {
+        width: 185px;
+        height: 185px;
+        border-radius: 50%;
+        border: #ff9191 3px solid;
+        display: inline-block;
+        outline: none;
+        overflow: hidden;
+    }
+
+    .login_div {
+        width: 100%;
+        box-sizing: border-box;
+        height: 1800px;
+        position: fixed;
+        padding: 5px;
+        top: -120px;
+        left: 0;
+        text-align: center;
+        background-image: linear-gradient(to bottom right, #fd0000, #4662ff, #ccd6ff);
+    }
+
+    .modal2 {
+        position: fixed; /* Stay in place */
+        padding-top: 1px;
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    }
+
+    .audio_play_container span {
+        position: fixed;
+        top: 3px;
+        right: 6px;
+        font-size: 50px;
+        color: red;
+        cursor: pointer;
+    }
+
+    .add_song {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        margin: 0 auto;
+        height: 80rem;
+        text-align: center;
+        padding: 3px;
+        border-radius: 0;
+        background-image: linear-gradient(to bottom right, #e76cfa, #3b57ef, #ffffff);
+        box-shadow: black 3px 6px 9px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .register_div {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        min-height: 55rem;
+        text-align: center;
+        border-radius: 0;
+        background-image: linear-gradient(to bottom right, #e66cff, #4662ff, #ccd6ff);
+        box-shadow: black 3px 6px 9px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 48px 10px 0 0;
+    }
+}
+
+.register_div:hover {
+    box-shadow: black 5px 10px 15px;
+    -webkit-transition: 0.6s;
+}
+
+.register_tag_name {
+    margin-bottom: 30px;
+}
+
+.input_register input {
+    float: left;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+.btn-submit_register input {
+    width: 5rem;
+    height: 2rem;
+}
+
+
+.input_register_col_min input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    border: none;
+}
+
+.register_form input {
+    background: none;
+}
+
+.register_form input[type=date] {
+    color: #c3c3c3;
+}
+
+.register_form input[type=button]:hover {
+    box-shadow: black 2px 4px 6px;
+    -webkit-transition: 0.6s;
+}
+
+.message_register {
+    margin-top: 20px;
+}
+
+.login_div:hover {
+    box-shadow: black 5px 10px 15px;
+    -webkit-transition: 0.6s;
+}
+
+.login_tag_name {
+    margin-bottom: 30px;
+}
+
+label {
+    display: inline;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input_login {
+    width: 80%;
+    height: 2rem;
+    box-sizing: border-box;
+    border-bottom: #5fff00 2px solid;
+    float: left;
     display: block;
 }
 
-.indam {
+.input_login input {
+    float: left;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+}
+
+.login_btn input:hover {
+    box-shadow: black 2px 4px 6px;
+}
+
+.login_btn input {
+    width: 6rem;
+    height: 2rem;
+    margin-right: 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, #ff3939, #5fff00);
+    box-shadow: black 1px 2px 3px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+}
+
+.login_btn {
+    width: 100%;
+    height: 2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.login_div .container_login {
+    margin: 10px 0;
+    height: 2rem;
+}
+
+.new_song {
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.col_3 {
+    width: 32%;
+    box-sizing: border-box;
+}
+
+.conten_new_song div p {
+    color: white;
+    font-size: 12px;
     font-weight: bold;
-    font-size: 105%;
+    float: left;
+    padding-left: 5px;
 }
 
-::placeholder {
-    color: #323232;
+.select_menu:hover {
+    background: #000000;
+    box-shadow: white 3px 6px 9px;
+    -webkit-transition: 0.6s;
+    border: none;
 }
 
-input[placeholder] {
-    padding-left: 20px;
+
+.rieng {
+    background: none;
 }
+
+.add_song h1 {
+    color: white;
+}
+
+
+.get_mySong div:hover {
+    border: red 3px solid;
+    background: black;
+    -webkit-transition: 0.6s;
+}
+
+.get_mySong {
+    width: 70%;
+    min-height: 700px;
+    padding: 30px;
+    background: #292929;
+    margin: 20px auto;
+    border: red 1px solid;
+}
+
+.get_mySong div p {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    padding-left: 5px;
+}
+
+.get_mySong div img {
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    border: #ff9191 3px solid;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+}
+
+
+.index_name {
+    width: 20%;
+    height: 2rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.index_name label {
+    float: left;
+}
+
 
 input:focus {
-    outline: none
-}
-
-.mau_xanh {
-    color: chartreuse;
+    outline: none;
+    color: white;
 }
 
 button:focus {
     outline: none;
 }
 
-#msgerror {
-    margin-top: 20px;
+form ::placeholder {
+    color: #c3c3c3;
     font-weight: bold;
-    font-size: 110%;
+    background: none;
+    font-size: 90%;
 }
 
-
-.sucset {
-    color: #17ff00;
+label {
+    color: white;
 }
 
-
-.error {
-    color: yellow;
+.msgerror_red {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 0 20px;
 }
 
-
-.title_show {
-    color: aqua;
+.msgsuccses_green {
+    color: #9fff65;
 }
 
-button:hover {
-    box-shadow: black 3px 6px 9px;
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+.modal1 {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal3 {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal4 {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal5 {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal6 {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+audio:focus {
+    outline: none;
+}
+
+.audio_play_container p {
     color: red;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.audio_play_container {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.on_audio_play {
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.on_audio_play:hover {
+    border: red 3px solid;
+    background: black;
+    -webkit-transition: 0.6s;
+}
+
+.load_ding {
+    margin: 300px 49%;
+    color: white;
+    width: 50px;
+    height: auto;
 }

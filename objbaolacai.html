@@ -5,34 +5,165 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="objbaolacai.css">
-    <title>báo lá cải</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Mini music</title>
 </head>
 <body>
-<div class="toan_dien">
-    <div class="container">
-        <form action="#" method="get">
-            <label>tiêu đề:</label>
-            <input type="text" id="title" placeholder="title"><br>
-            <label>ảnh đại diện bài viết "dạng url":</label>
-            <input type="text" id="thumbnail" placeholder="profile"><br>
-            <label>nội dung:</label>
-            <input type="text" id="content" placeholder="conten stt"><br>
-            <label>danh mục:</label>
-            <input type="text" id="category" placeholder="category">
-            <div>
-                <button class="button_save" type="button" id="save"><span class="indam">lưu lại</span></button>
-                <button class="button_reset" type="button" id="reset"><span class="indam">xóa đầu nhập</span></button>
-                <button class="button_show" type="button" id="display"><span class="indam">hiển thị nội dung đã lưu</span>
-                </button>
+<div class="audio_play_container modal-content">
+</div>
+<div  id="myModal" class="modal1">
+    <div class="register_div modal-content">
+        <form action="#" method="get" name="register_form" class="register_form">
+            <h1 class="register_tag_name">Sign up</h1>
+            <div class="container">
+                <div class="index_name_col_min"><label>First name:</label></div>
+                <div class="input_register_col_min"><input type="text" placeholder="Enter the First name"
+                                                           class="firstName_register"></div>
+                <div class="index_name_col_min"><label>Lastname:</label></div>
+                <div class="input_register_col_min"><input type="text" placeholder="Enter the last name"
+                                                           class="lastName_register">
+                </div>
             </div>
-            <div id="msgerror"></div>
+            <div class="container">
+                <div class="index_name_col_min"><label>Email:</label></div>
+                <div class="input_register"><input type="email" placeholder="Enter email for example blabla@gmail.com"
+                                                   class="email_register"></div>
+            </div>
+            <div class="container">
+                <div class="index_name_col_min"><label>Avatar:</label></div>
+                <div class="input_register"><input type="text"
+                                                   placeholder="Enter photo link"
+                                                   class="avatar_register"></div>
+            </div>
+            <div class="container">
+                <div class="index_name_col_min"><label>Address:</label></div>
+                <div class="input_register"><input type="text" placeholder="Enter the address" class="address_register"></div>
+            </div>
+            <div class="container">
+                <div class="index_name_col_min"><label>Phone:</label></div>
+                <div class="input_register_col_min"><input type="text" placeholder="Enter the phone number"
+                                                           class="phoneNumber_register"></div>
+                <div class="index_name_col_min"><label>Password:</label></div>
+                <div class="input_register_col_min"><input type="password"
+                                                           placeholder="Please enter a password of at least 4 characters"
+                                                           class="password_register">
+                </div>
+            </div>
+            <div class="container">
+                <div class="index_name_col_min"><label>Birthday:</label></div>
+                <div class="input_register_col_min"><input type="date" name="birthDay_register"
+                                                           class="birthDay_register">
+                </div>
+                <div class="container">
+                    <div class="index_name_col_min"><label>Gender</label></div>
+                    <div class="input_register_col_min01">
+                        <label>male:</label> <input type="radio" class="register_gender" name="gender" value="1">
+                        <label>female:</label> <input type="radio" class="register_gender" name="gender" value="2">
+                        <label>orther:</label> <input type="radio" class="register_gender" name="gender" value="3">
+                    </div>
+                </div>
+            </div>
+            <div class="btn-submit_register">
+                <input type="button" value="Submit" class="submit_register">
+                <input type="button" value="Go to login" class="go_to_login">
+            </div>
+            <div class="message_register">
+                <strong class="msg_show"></strong>
+            </div>
         </form>
     </div>
-    <div id="show_conten_all">
+</div>
+<div class="modal2" title="T2009m1 asingment nguyễn xuân hjnh">
+    <div class="login_div modal-content">
+        <form action="#" method="get" name="login_form">
+            <h1 class="login_tag_name">Login</h1>
+            <div class="container_login">
+                <div class="index_name"><label>Email: </label></div>
+                <div class="input_login"><input type="text" placeholder="Enter the email" class="login_email"></div>
+            </div>
+            <div class="container_login">
+                <div class="index_name"><label>Password:</label></div>
+                <div class="input_login"><input type="password" placeholder="Enter the password" class="login_password"></div>
+            </div>
+            <div class="login_btn">
+                <input type="button" value="Login" class="submit_login">
+                <input type="button" value="Go to register" class="goto_register">
+            </div>
+            <h4 class="msg_login"></h4>
+        </form>
+    </div>
+</div>
+<div class="new_song ">
+    <div class="menu">
+        <span class="close_menu">&times;</span>
+        <img  class="logo_app logo-rotate" src="https://logoart.vn/blog/wp-content/uploads/2012/01/thiet-ke-logo-dep-mat7.jpg" alt="mini music">
+        <h1> Mini music</h1>
+        <ul class="container_menu">
+            <li class="select_menu select_menu1 display_info_user">Profile</li>
+            <li class="select_menu  upload">Upload song</li>
+            <li class="select_menu select_menu3 load_my_song">My song</li>
+            <li class="select_menu select_menu2 logout">Log out</li>
+        </ul>
+    </div>
+    <div class="conten_new_song">
+    </div>
+</div>
+<div class="modal4">
+    <span class="close_profile1">&times;</span>
+    <div class="my_info modal-content">
+    </div>
+</div>
+<div class="modal3">
+    <span class="close_add_song">&times;</span>
+    <div class="add_song modal-content">
+        <form action="#" method="get" class="post_music">
+            <h1 class="addSong_tag_name">Add song</h1>
+            <div class="container_login">
+                <div class="index_name"><label>Name:</label></div>
+                <div class="input_login"><input type="text" placeholder="Song name" class="add_song_name"></div>
+            </div>
+            <div class="container_login">
+                <div class="index_name"><label>Description:</label></div>
+                <div class="input_login"><input type="text" placeholder="Enter the description of the song" class="add_song_description">
+                </div>
+            </div>
+            <div class="container_login">
+                <div class="index_name"><label>Thumbnail:</label></div>
+                <div class="input_login"><input type="text" placeholder="Enter url the song avatar" class="add_song_thumbnail"></div>
+            </div>
+            <div class="container_login">
+                <div class="index_name"><label>Link:</label></div>
+                <div class="input_login"><input type="text" placeholder="Import mp3 format music link" class="add_song_link"></div>
+            </div>
+            <div class="container_login">
+                <div class="index_name"><label>Message:</label></div>
+                <div class="input_login"><input type="text" placeholder="Enter a message" class="message_addSong"></div>
+            </div>
+            <div class="container">
+                <div class="index_name_col_min"><label>Singer:</label></div>
+                <div class="input_register_col_min"><input type="text" placeholder="Enter the name of the performer of this song"
+                                                           class="add_song_singer rieng">
+                </div>
+                <div class="index_name_col_min"><label>Author:</label></div>
+                <div class="input_register_col_min"><input type="text" placeholder="Enter the name of this song's creator"
+                                                           class="add_song_author rieng">
+                </div>
+            </div>
+            <div class="login_btn">
+                <input type="button" value="Sub mit" class="btnSubmit">
+                <input type="button" value="Reset" class="btndelete">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal5">
+    <span class="close_mysong">&times;</span>
+    <div class="get_mySong modal-content">
     </div>
 </div>
 <script src="objbaolacai.js"></script>
-
 </body>
 </html>
